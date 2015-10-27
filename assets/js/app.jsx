@@ -65,9 +65,8 @@ class ExampleA extends Base {
     }
     handleClick(e) {
         e.preventDefault();
-        let newCount = this.state.count + 1;
         this.setState({
-            count: newCount
+            count: (this.state.count + 1)
         })
     }
     render() {
