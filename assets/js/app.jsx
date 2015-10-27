@@ -72,7 +72,11 @@ class ExampleA extends Base {
     }
     render() {
         return (
-            <a href="#" ref="link" onClick={this.handleClick}>{this.state.count}</a>
+            <a href="#" ref="link" onClick={this.handleClick}>
+                <span>
+                    {this.state.count}
+                </span>
+            </a>
         )
     }
 }
